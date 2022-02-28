@@ -39,3 +39,10 @@
 .input_submit:hover {
 	background-color: #b3556e;
 }
+
+.todos {
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+	flex-wrap: wrap;
+}
