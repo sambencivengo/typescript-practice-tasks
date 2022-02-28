@@ -4,11 +4,12 @@ import './styles.css';
 interface Props {
 	todo: string;
 	setTodo: React.Dispatch<React.SetStateAction<string>>;
+	handleAdd: (e: React.FormEvent) => void;
 }
 
-function InputField({ todo, setTodo }: Props) {
+function InputField({ todo, setTodo, handleAdd }: Props) {
 	return (
-		<form className="input">
+		<form className="input" onSubmit={handleAdd}>
 			<input
 				type="input"
 				placeholder="Enter a task"
